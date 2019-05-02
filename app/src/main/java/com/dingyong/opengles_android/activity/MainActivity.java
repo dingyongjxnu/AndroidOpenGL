@@ -7,6 +7,7 @@ import android.view.View;
 
 import com.dingyong.opengles_android.R;
 import com.dingyong.opengles_android.activity.draw.TriangleActivity;
+import com.dingyong.opengles_android.activity.draw.TriangleWithCameraActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,6 +21,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, TriangleActivity.class);
         startActivity(intent);
     }
-
+    public void onDrawTriangleWithCamera(View view) {
+        Intent intent = new Intent(this, TriangleWithCameraActivity.class);
+        startActivity(intent);
+    }
 
 }
