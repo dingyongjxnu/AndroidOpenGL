@@ -18,6 +18,8 @@
         </activity>
         <activity android:name=".activity.draw.TriangleActivity">
         </activity>
+        <activity android:name=".activity.draw.TriangleWithCameraActivity">
+        </activity>
     </application>
 
 </manifest>
