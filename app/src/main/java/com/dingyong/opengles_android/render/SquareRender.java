@@ -17,28 +17,28 @@ import javax.microedition.khronos.opengles.GL10;
  */
 public class SquareRender extends BaseRender {
 
-    private final String vertexShaderCode =
+    private static final String VERTEX_SHADER_CODE =
             "attribute vec4 vPosition;" +
                     "uniform mat4 vMatrix;"+
                     "void main() {" +
                     "  gl_Position = vMatrix*vPosition;" +
                     "}";
 
-    private final String fragmentShaderCode =
+    private static final String FRAGMENT_SHADER_CODE =
             "precision mediump float;" +
                     "uniform vec4 vColor;" +
                     "void main() {" +
                     "  gl_FragColor = vColor;" +
                     "}";
 
-    static float position[] = {
+    private static float position[] = {
             -0.5f,  0.5f, 0.0f, // top left
             -0.5f, -0.5f, 0.0f, // bottom left
             0.5f, -0.5f, 0.0f, // bottom right
             0.5f,  0.5f, 0.0f  // top right
     };
 
-    static short index[]={
+    private static short index[]={
             0,1,2,0,2,3
     };
 
@@ -69,8 +69,8 @@ public class SquareRender extends BaseRender {
         indexBuffer.position(0);
 
 
-        int vertexShade = loadShader(GLES20.GL_VERTEX_SHADER, vertexShaderCode);
-        int fragmentShade = loadShader(GLES20.GL_FRAGMENT_SHADER, fragmentShaderCode);
+        int vertexShade = loadShader(GLES20.GL_VERTEX_SHADER, VERTEX_SHADER_CODE);
+        int fragmentShade = loadShader(GLES20.GL_FRAGMENT_SHADER, FRAGMENT_SHADER_CODE);
         mProgram = GLES20.glCreateProgram();
         GLES20.glAttachShader(mProgram, vertexShade);
         GLES20.glAttachShader(mProgram, fragmentShade);
