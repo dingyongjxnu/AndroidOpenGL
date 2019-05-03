@@ -1,11 +1,13 @@
 package com.dingyong.opengles_android.activity;
 
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.dingyong.opengles_android.R;
+import com.dingyong.opengles_android.activity.draw.SquareActivity;
 import com.dingyong.opengles_android.activity.draw.TriangleActivity;
 import com.dingyong.opengles_android.activity.draw.TriangleWithCameraActivity;
 
@@ -25,5 +27,8 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, TriangleWithCameraActivity.class);
         startActivity(intent);
     }
-
+    public void onDrawTriangleSquare(View view){
+        Intent intent = new Intent(this, SquareActivity.class);
+        startActivity(intent);
+    }
 }

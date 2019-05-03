@@ -20,6 +20,8 @@
         </activity>
         <activity android:name=".activity.draw.TriangleWithCameraActivity">
         </activity>
+        <activity android:name=".activity.draw.SquareActivity">
+        </activity>
     </application>
 
 </manifest>

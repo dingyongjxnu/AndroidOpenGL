@@ -22,5 +22,10 @@
         android:text="绘制等腰三角形"
         />
 
-
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onDrawTriangleSquare"
+        android:text="绘制正方形"
+        />
 </LinearLayout>
