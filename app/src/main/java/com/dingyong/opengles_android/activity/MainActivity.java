@@ -8,6 +8,7 @@ import android.view.View;
 
 import com.dingyong.opengles_android.R;
 import com.dingyong.opengles_android.activity.draw.CircularActivity;
+import com.dingyong.opengles_android.activity.draw.CubeActivity;
 import com.dingyong.opengles_android.activity.draw.SquareActivity;
 import com.dingyong.opengles_android.activity.draw.TriangleActivity;
 import com.dingyong.opengles_android.activity.draw.TriangleWithCameraActivity;
@@ -36,5 +37,8 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, CircularActivity.class);
         startActivity(intent);
     }
-
+    public void onDrawCube(View view){
+        Intent intent = new Intent(this, CubeActivity.class);
+        startActivity(intent);
+    }
 }

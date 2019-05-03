@@ -24,6 +24,8 @@
         </activity>
         <activity android:name=".activity.draw.CircularActivity">
         </activity>
+        <activity android:name=".activity.draw.CubeActivity">
+        </activity>
     </application>
 
 </manifest>

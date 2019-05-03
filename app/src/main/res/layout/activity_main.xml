@@ -35,4 +35,11 @@
         android:onClick="onDrawCircular"
         android:text="绘制圆形"
         />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onDrawCube"
+        android:text="绘制正方体"
+        />
 </LinearLayout>
